@@ -1,0 +1,17 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.show-price {
+  font-size: 3.5rem;
+  text-align: center;
+  height: 90px;
+}
+
+@media(max-width: 768px) {
+  .show-price {
+      font-size: 3em;
+      height: 70px;
+      padding-top: 5px;
+  }
+}
