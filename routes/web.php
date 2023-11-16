@@ -37,7 +37,7 @@ Route::get('/', fn() => redirect()->route('login'));
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::middleware(['auth' => 'role:superadmin'])->group(function (){
+    Route::middleware(['role:superadmin'])->group(function (){
         Route::resource('inventories', InventoryController::class);
         Route::get('export/xlsx', [InventoryController::class, 'exportExcel'])->name('export.excel');
         Route::get('export/csv', [InventoryController::class, 'exportCSV'])->name('export.csv');
