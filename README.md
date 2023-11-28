@@ -17,19 +17,19 @@ The Inventory Web App is built using Laravel 10 and several packages such as Lar
 
 ## Getting Started
 
-- ** Use PHP >= 8++**
-- ** Clone github to your local folder**
-- ** Make new database**
-- ** copy .env.example and rename it to .env**
-- ** edit the .env database name**
-- ** Run composer install **
-- ** Run php artisan key:generate**
-- ** Run php artisan migrate --seed**
-- ** Run php artisan serve**
+- **Use PHP >= 8++**
+- **Clone github to your local folder**
+- **Make new database**
+- **copy .env.example and rename it to .env**
+- **edit the .env database name**
+- **Run composer install**
+- **Run php artisan key:generate**
+- **Run php artisan migrate --seed**
+- **Run php artisan serve**
 
 ## Demo
-- ** inventory.afaisal.my.id**
-- ** User Data**
+- **inventory.afaisal.my.id**
+- **User Data**
 - Email : superadmin@work.com
 - Password : superadmin
 - Email : sales@work.com
