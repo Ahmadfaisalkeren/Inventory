@@ -28,7 +28,7 @@ The Inventory Web App is built using Laravel 10 and several packages such as Lar
 - **Run php artisan serve**
 
 ## Demo
-- View Demo Here : **https://inventory.afaisal.my.id**
+- [View Demo Here] : (https://inventory.afaisal.my.id){:target="_blank"}
 - **User Data**
 - Email : superadmin@work.com
 - Password : superadmin
