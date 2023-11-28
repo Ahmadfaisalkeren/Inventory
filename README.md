@@ -12,11 +12,11 @@
 Bahasa Indonesia
 Inventory Web App ini dibangun menggunakan Laravel 10 serta beberapa package seperti Laravel Breeze, Maatwebsite, BarryVdh domPDF, Yajra Datatables dan Bootstrap CSS versi 5. Fitur-fitur yang ada didalam aplikasi antara lain:
 
-- **[Autentikasi Login]**
-- **[CRUD Inventory]**
-- **[CRUD Sales]**
-- **[CRUD Purchase]**
-- **[Export data Excel, PDF, CSV]**
+- **Autentikasi Login**
+- **CRUD Inventory**
+- **CRUD Sales**
+- **CRUD Purchase**
+- **Export data Excel, PDF, CSV**
 
 ## Learning Laravel
 
