@@ -2,11 +2,8 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InventoryController;
-use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PurchaseController;
-use App\Http\Controllers\PurchaseDetailsController;
-use App\Http\Controllers\PurchasesController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\SalesDetailsController;
 use App\Http\Controllers\SalessController;
@@ -23,15 +20,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('template.index');
-// });
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-
 Route::get('/', fn() => redirect()->route('login'));
 
 Route::group(['middleware' => 'auth'], function() {
@@ -46,7 +34,6 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::group(['middleware' => 'role:superadmin,sales,manager'], function() {
         Route::resource('sales', SalesController::class);
-        // Route::get('sales/add', [SalessController::class, 'passData'])->name('pass_data');
         Route::resource('sales_details', SalesDetailsController::class);
         Route::get('getInventories', [SalesDetailsController::class, 'getInventories'])->name('getInventories');
         Route::post('sales_detail/add', [SalesDetailsController::class, 'addProduct'])->name('sales_details.add');
@@ -73,7 +60,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('purchase_form', [PurchaseController::class, 'getPurchaseData'])->name('purchase_form');
         Route::post('purchase_store', [PurchaseController::class, 'store'])->name('purchase-store');
         Route::post('purchase_store_tok', [PurchaseController::class, 'storePurchase'])->name('purchase-store-tok');
-        Route::put('purchase-edit', [PurchaseController::class, 'updatePurchase'])->name('edit-purchase');
+        // Route::put('purchase-edit', [PurchaseController::class, 'updatePurchase'])->name('update-purchase');
         Route::delete('purchase-delete', [PurchaseController::class, 'deletePurchase'])->name('delete-purchase');
         Route::get('edit-purchase/{purchase_id}', [PurchaseController::class, 'edit_purchase'])->name('edit-purchase');
         Route::get('get-purchase/{purchaseId}', [PurchaseController::class, 'get_purchase'])->name('get-purchase');
