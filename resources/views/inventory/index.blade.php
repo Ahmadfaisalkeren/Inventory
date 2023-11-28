@@ -12,8 +12,8 @@
                             <div class="d-flex justify-content-between">
                                 <div class="btn-group">
                                     <a href="{{ route('export.excel') }}" class="btn btn-success btn-sm"><i class="far fa-file-excel"></i> Export Excel</a>
-                                    <a href="{{ route('export.pdf') }}" target="_blank" class="btn btn-danger btn-sm ml-1"><i class="far fa-file-pdf"></i> Export PDF</a>
                                     <a href="{{ route('export.csv') }}" class="btn btn-success btn-sm ml-1"><i class="fas fa-file-csv"></i> Export CSV</a>
+                                    <a href="{{ route('export.pdf') }}" target="_blank" class="btn btn-danger btn-sm ml-1"><i class="far fa-file-pdf"></i> Export PDF</a>
                                 </div>
                                 <button class="btn btn-primary btn-sm" id="addInventory"><i class="fas fa-plus"></i> Add Product</button>
                             </div>
