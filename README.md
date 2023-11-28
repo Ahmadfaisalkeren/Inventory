@@ -1,8 +1,11 @@
 
 ## About Inventory
 
-Bahasa Indonesia
+**Bahasa Indonesia**
 Inventory Web App ini dibangun menggunakan Laravel 10 serta beberapa package seperti Laravel Breeze, Maatwebsite, BarryVdh domPDF, Yajra Datatables, Bootstrap CSS versi 5 dan MySQL sebagai Database.
+
+**English**
+The Inventory Web App is built using Laravel 10 and several packages such as Laravel Breeze, Maatwebsite, BarryVdh domPDF, Yajra Datatables, Bootstrap CSS version 5, and MySQL as the database.
 
 ## Features
 
